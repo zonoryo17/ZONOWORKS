@@ -1,15 +1,86 @@
+/* .topImage {
+  margin-top: 100px;
+} */
+
 .container {
-  max-width: 36rem;
+  max-width: 80rem;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  margin: 2rem auto 6rem;
+  font-family: "メイリオ";
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  /* position: fixed; */
 }
 
-.backToHome {
-  margin: 3rem 0 0;
+.headerDev {
+  position: relative;
+  display: flex;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  width: 100%;
+  padding: 2rem 0 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(29, 50, 133);
+}
+
+.footerIcons {
+  margin: 30px 0;
+}
+
+.profileIcons {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.h1Text {
+  font-size: 1.7rem;
+  font-family: 'Kanit', sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+  text-align: center;
+  margin-top:40px;
+  margin-bottom:30px;
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: center;
+}
+
+.h1Text:before, .h1Text:after {
+  border-top: 2px solid;
+  border-color: rgb(75, 156, 214);
+  content: "";
+  width: 5em; /* 線の長さ */
+}
+.h1Text:before {
+  margin-right: 1em; /* 文字の右隣 */
+}
+.h1Text:after {
+  margin-left: 1em; /* 文字の左隣 */
+}
+
+.listBox {
+  list-style: none;
+  width: 100%;
+}
+
+.listBox li {
+  color: #333;
+  border-left: double 5px rgb(29, 50, 133) ;
+  border-bottom: dotted 1px rgb(9, 10, 10);
+  padding: 0.5rem;
+  width: 25%;
+  border-spacing: 1px;
 }

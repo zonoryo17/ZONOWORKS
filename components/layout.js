@@ -1,11 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Images from '../components/atoms/Images'
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Footer from '../components/Footer'
+import "remixicon/fonts/remixicon.css";
 
-const name = '中薗　良太';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'ZonoWorks';
 
 export default function Layout({ children, home }) {
   return (
@@ -26,30 +27,25 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-          <>
-              <div>
-                <Image
-                  priority
-                  src="/images/profile2.jpg"
-                  className={utilStyles.borderCircle}
-                  height={300}
-                  width={300}
-                  alt={name}
-                />
-              </div>
-            <h2 className={utilStyles.headingLg}>
-                <p className={utilStyles.colorInherit}>{name}</p>
-            </h2>
-          </>
+        <div className={styles.headerDev}>
+          <Link href="/" className="font-sans text-xl md:text-base">
+            <a>
+              <Images
+                img="/images/zonoworks2.jpg"
+                height={50}
+                width={230}
+              />
+            </a>
+          </Link>
+          <div className="title" style={{ margin: "auto 30px auto auto" }}>
+            <Link href="./posts/Profile"><a style={{ marginRight: "30px" }}> Profile </a></Link>
+            <Link href="./posts/Works"><a style={{ marginRight: "30px" }}> Works </a></Link>
+            <Link href="./posts/Contact"><a> Contact </a></Link>
+          </div>
+        </div>
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <Footer />
     </div>
   );
 }

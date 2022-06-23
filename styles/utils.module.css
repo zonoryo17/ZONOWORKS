@@ -4,6 +4,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .headingXl {
@@ -21,12 +22,12 @@
 }
 
 .headingMd {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .borderCircle {
-  border-radius: 9999px;
+  border-radius: 5px;
 }
 
 .colorInherit {
@@ -37,16 +38,33 @@
   padding-top: 1px;
 }
 
-.list {
+.topText {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* .list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.listItem {
-  margin: 0 0 1.25rem;
-}
+} */
 
 .lightText {
   color: #666;
+}
+
+.profile {
+  display: flex;
+}
+
+.iconText {
+  /* position:absolute; */
+  margin-left: 4.5rem;
+}
+
+.tableText {
+  font-size: 0.9rem;
+  line-height: 3;
+  margin: 0 1rem 0 4rem;
 }

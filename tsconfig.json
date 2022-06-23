@@ -14,15 +14,17 @@
     "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    // "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "resolveJsonModule": false
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/atoms/PrimaryButton.jsx", "pages/About.jsx"  ],
+    "**/*.tsx",
+    "components/atoms/PrimaryButton.jsx",
+    "pages/About.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]
