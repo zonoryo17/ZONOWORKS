@@ -1,7 +1,3 @@
-/* .topImage {
-  margin-top: 100px;
-} */
-
 .container {
   max-width: 80rem;
   padding: 0 1rem;
@@ -10,30 +6,11 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   padding-bottom: 2rem;
-  /* position: fixed; */
 }
 
 .headerDev {
-  position: relative;
   display: flex;
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.footer {
-  width: 100%;
-  padding: 2rem 0 1rem;
-  text-align: center;
-  color: #fff;
-  background-color: rgb(29, 50, 133);
 }
 
 .footerIcons {
@@ -81,6 +58,20 @@
   border-left: double 5px rgb(29, 50, 133) ;
   border-bottom: dotted 1px rgb(9, 10, 10);
   padding: 0.5rem;
-  width: 25%;
+  width: 50%;
+  height:5rem;
   border-spacing: 1px;
+}
+
+.listBoxYear {
+  color: #999;
+  font-weight: bold;
+}
+.listBoxContents {
+  display: flex;
+  font-weight: bold;
+}
+
+.listBoxContentP1 {
+  margin: 0 20px 0 30px;
 }
