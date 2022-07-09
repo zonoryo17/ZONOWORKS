@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "remixicon/fonts/remixicon.css";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -13,14 +13,12 @@ export default function Footer() {
         <div className="flex justify-center pt-10">
           <Link href="https://twitter.com/zonoryo03">
             <a className="mr-3">
-              {/* アイコンをセットする */}
-              <i className="ri-twitter-fill" ></i>
+              <FaTwitter />
             </a>
           </Link>
           <Link href="https://github.com/zonoryo17">
             <a>
-              {/* アイコンをセットする */}
-              <i className="ri-github-fill"></i>
+            <FaGithub />
             </a>
           </Link>
         </div>

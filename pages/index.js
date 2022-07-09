@@ -1,7 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import styles from '../styles/Home.module.css'
 import 'tailwindcss/tailwind.css';
-import About from "./About"
+import About from "./About";
+
 
 export default function Home() {
   return (

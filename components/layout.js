@@ -1,4 +1,4 @@
-import Footer from '../components/Footer'
+import Footer from './Footer'
 import Header from './Header';
 
 export const siteTitle = 'ZonoWorks';
