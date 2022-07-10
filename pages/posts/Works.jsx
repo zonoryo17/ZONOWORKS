@@ -13,18 +13,18 @@ const Works = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div>
+        <div className="mt-20">
           <h1 className={layoutStyles.h1Text}>Works</h1>
-          <div className="flex flex-wrap flex-col items-center mb-20 mt-10 md:mt-20 text-center space-x-5">
-            <div>
+          <div className="flex flex-wrap flex-col items-center mb-20 mt-20 md:mt-20 text-center space-x-5">
+            <div className="mx-5">
               <Link href="/posts/PortforioSite">
-                <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-w-screen-sm max-h-60 mb-5 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
+                <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="mb-5 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
               </Link>
             </div>
             <Link href="/posts/PortforioSite">
-              <a className="font-bold">ポートフォリオサイト</a>
+              <a className="font-bold mb-5 md:mb-10 mt-5 md:mt-10">ポートフォリオサイト</a>
             </Link>
-            <p>私のスキルや経歴をまとめたポートフォリオサイトです。</p>
+            <p className="mt-5 md:mt-0 mb-5 pr-5">私のスキルや経歴をまとめたポートフォリオサイトです。</p>
           </div>
         </div>
       </Layout>

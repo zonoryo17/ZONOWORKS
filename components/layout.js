@@ -5,8 +5,8 @@ export const siteTitle = 'ZonoWorks';
 
 export default function Layout({ children }) {
   return (
-      <div>
-        {/* <Head>
+    <div>
+      {/* <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
@@ -21,9 +21,9 @@ export default function Layout({ children }) {
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head> */}
-        <Header />
-        <main>{children}</main>
-          <Footer />
-      </div>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
   );
 }
