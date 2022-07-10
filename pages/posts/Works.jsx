@@ -18,7 +18,7 @@ const Works = () => {
           <div className="flex flex-wrap flex-col items-center mb-20 mt-20 md:mt-20 text-center space-x-5">
             <div className="mx-5">
               <Link href="/posts/PortforioSite">
-                <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="mb-5 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
+                <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-h-60 mb-3 shadow-lg transition-all duration-300" />
               </Link>
             </div>
             <Link href="/posts/PortforioSite">
