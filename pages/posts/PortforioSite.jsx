@@ -5,9 +5,9 @@ import { BsCodeSlash } from "react-icons/bs";
 const PortforioSite = () => {
   return (
     <Layout>
-      <div className="flex flex-col items-center mt-20 mb-10 md:mb-20">
+      <div className="flex flex-col items-center mx-5 mt-20 mb-10 md:mb-20">
         <div>
-          <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-w-screen-sm max-h-60 mb-5 shadow-lg transition-all mx-5" />
+          <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="mb-5 shadow-lg transition-all " />
         </div>
         <p className="font-bold mb-10">ポートフォリオサイト</p>
         <div className="max-w-md mx-5">
