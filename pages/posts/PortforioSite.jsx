@@ -7,7 +7,7 @@ const PortforioSite = () => {
     <Layout>
       <div className="flex flex-col items-center mt-20 mb-10 md:mb-20">
         <div>
-          <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-w-screen-sm max-h-60 mb-5 shadow-lg transition-all " />
+          <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-w-screen-sm max-h-60 mb-5 shadow-lg transition-all mx-5" />
         </div>
         <p className="font-bold mb-10">ポートフォリオサイト</p>
         <div className="max-w-md mx-5">

@@ -14,7 +14,7 @@ const Header = () => {
     <>
     <header id="header" className="flex justify-between items-center mt-7 mb-5 mx-5 sm:mx-10">
       <Link href="/">
-        <a  className="w-40 sm:w-52 md:w-full">
+        <a>
           <Images
             img="/images/zonoworks2.jpg"
             height={50}

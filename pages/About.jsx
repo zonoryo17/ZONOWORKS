@@ -126,7 +126,7 @@ const About = () => {
         <div>
           <div className={utilStyles.section1}>
             <div className="flex flex-col items-center">
-              <h1 className="text-4xl text-mono border-b-2 border-gray-200 w-40">About Me</h1>
+              <h1 className="text-4xl text-mono border-b-2 border-gray-200">About Me</h1>
               <table className="table table-auto ml-8 mr-5 sm:ml-16 mt-10 text-md">
                 <tbody>
                   <tr>
@@ -160,12 +160,12 @@ const About = () => {
           </div>
           <div className={utilStyles.section2}>
             <div className="flex justify-center">
-              <h1 className="text-zinc-600 text-4xl text-mono border-b-2 border-gray-400 w-30">Works</h1>
+              <h1 className="text-zinc-600 text-4xl text-mono border-b-2 border-gray-400">Works</h1>
             </div>
             <div className="flex flex-wrap justify-center mb-10 mt-16 mx-5 space-x-0 sm:space-x-10">
               <div className="text-center mt-5">
                 <Link href="/posts/PortforioSite">
-                  <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-w-screen-sm max-h-60 mb-3 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
+                  <img src="/images/zonoworksImg.jpg" alt="works01の画像" className=" max-h-60 mb-3 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
                 </Link>
                 <Link href="/posts/PortforioSite">
                   <a className="font-bold">ポートフォリオサイト</a>
@@ -173,7 +173,7 @@ const About = () => {
               </div>
               <div className="text-center mt-5">
                 <Link href="/posts/PortforioSite">
-                  <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-w-screen-sm max-h-60 mb-3 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
+                  <img src="/images/zonoworksImg.jpg" alt="works01の画像" className=" max-h-60 mb-3 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
                 </Link>
                 <Link href="/posts/PortforioSite">
                   <a className="font-bold">ポートフォリオサイト</a>

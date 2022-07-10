@@ -18,7 +18,7 @@
   border-top: 2px solid;
   border-color: rgb(75, 156, 214);
   content: "";
-  width: 4em; /* 線の長さ */
+  width: 4em; 
 }
 .h1Text:before {
   margin-right: 1em; /* 文字の右隣 */
@@ -29,8 +29,7 @@
 
 .listBox {
   list-style: none;
-  margin-left: 1rem;
-  width: 100%;
+  margin-left: 0.5rem;
 }
 
 .listBox li {
