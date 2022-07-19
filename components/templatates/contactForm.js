@@ -1,8 +1,45 @@
 import Link from 'next/link';
 import layoutStyles from '../../components/layout.module.css';
 import { BsTwitter } from "react-icons/bs";
+import { useState } from "react";
 
 const contactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("送信中");
+
+    let data = {
+      name,
+      email,
+      phoneNumber,
+      message
+    };
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      if (res.status === 200) {
+        console.log("送信が成功しました");
+        setSubmitted(true);
+        setName("");
+        setEmail("");
+        setPhoneNumber("");
+        setMessage("");
+      }
+    });
+  };
+  
   return (
     <>
       <div className="flex flex-col items-center text-center">
@@ -12,11 +49,13 @@ const contactForm = () => {
       </div>
       <div className="w-full lg:w-2/5 lg:max-w-full mx-auto shadow-lg mt-14">
         <div className="p-6 border border-gray-300 sm:rounded-md">
-          <form method="POST">
+          <form>
             <label className="block mb-6">
               <span className="bg-rose-700 text-white rounded-md px-2 py-1">必須</span>
               <span className="text-gray-700">お名前</span>
               <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 type="text"
                 name="name"
                 className="
@@ -40,6 +79,8 @@ const contactForm = () => {
               <span className="bg-rose-700 text-white rounded-md px-2 py-1">必須</span>
               <span className="text-gray-700">メールアドレス</span>
               <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 name="email"
                 type="email"
                 className="
@@ -63,6 +104,8 @@ const contactForm = () => {
               <span className="bg-gray-400 text-white rounded-md px-2 py-1">任意</span>
               <span className="text-gray-700">電話番号</span>
               <input
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
                 name="phoneNumber"
                 type="phoneNumber"
                 className="
@@ -85,6 +128,8 @@ const contactForm = () => {
               <span className="bg-rose-700 text-white rounded-md px-2 py-1">必須</span>
               <span className="text-gray-700">お問い合わせ内容</span>
               <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 name="message"
                 className="
             block
@@ -106,7 +151,7 @@ const contactForm = () => {
             <div className="mb-6">
               <button
                 type="submit"
-                disabled
+                onClick={handleSubmit}
                 className="
             h-10
             px-5
