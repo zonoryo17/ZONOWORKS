@@ -109,6 +109,13 @@ const About = () => {
             </div>
             <div>
               <Image
+                src="/images/mysql.svg"
+                height={120}
+                width={120}
+              />
+            </div>
+            <div>
+              <Image
                 src="/images/nodejs.svg"
                 height={140}
                 width={140}
