@@ -1,16 +1,17 @@
-export default sendMail = (req, res) => {
+const sendMail = (req, res) => {
   // 改行のエスケープシークエンスをbrタグに置換
   const htmlMsg = req.body.message.replaceAll("\n", "<br>")
   let nodemailer = require("nodemailer");
 
   // 送信用アカウントの設定（ここではGmail）
   const transporter = nodemailer.createTransport({
+    service: "gmail",
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: "sender@gmail.com",
+      user: "p.naka.0p0@gmail.com",
       // Googleアカウントでアプリパスワードを取得してくれる。
-      pass: "google_application_password",
+      pass: "izhoyzubeffoozqm",
     },
     secure: true,
   });
@@ -18,16 +19,18 @@ export default sendMail = (req, res) => {
   //管理人に送るお問い合わせメッセージ
   const toHostMailData ={
     from: "sender@mail.com",
-    to: "host@mail.com",
+    to: "p.naka.0p0@gmail.com",
     subject: `【お問い合わせ】${req.body.name}様より`,
     text: req.body.message + " | Sent from: " + req.body.email,
     html: `
     <p>【名前】</p>
     <p>${req.body.name}</p>
-    <p>【メッセージ】</p>
-    <p>${htmlMsg}</p>
     <p>【メールアドレス】</p>
     <p>${req.body.email}</p>
+    <p>【電話番号】</p>
+    <p>${req.body.phoneNumber}</p>
+    <p>【メッセージ】</p>
+    <p>${htmlMsg}</p>
     `,
   };
 
@@ -46,10 +49,12 @@ export default sendMail = (req, res) => {
     <h2>お問い合わせ内容</h2>
     <p>【名前】</p>
     <p> ${req.body.name}</p>
-    <p>【メッセージ】</p>
-    <p>${htmlMsg}</p>
     <p>【メールアドレス】</p>
     <p>${req.body.email}</p>
+    <p>【電話番号】</p>
+    <p>${req.body.phoneNumber}</p>
+    <p>【メッセージ】</p>
+    <p>${htmlMsg}</p>
     <p>------------------------------------------------------------</p>
     `,
   };
@@ -65,3 +70,5 @@ export default sendMail = (req, res) => {
   });
   res.send("success");
 }
+
+export default sendMail;
