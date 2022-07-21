@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import layoutStyles from '../../components/layout.module.css';
-import { BsTwitter } from "react-icons/bs";
 import { useState } from "react";
 
 const contactForm = () => {
@@ -36,10 +34,12 @@ const contactForm = () => {
         setEmail("");
         setPhoneNumber("");
         setMessage("");
+      } else {
+        console.log("送信に失敗しました");
       }
     });
   };
-  
+
   return (
     <>
       <div className="flex flex-col items-center text-center">
@@ -49,7 +49,7 @@ const contactForm = () => {
       </div>
       <div className="w-full lg:w-2/5 lg:max-w-full mx-auto shadow-lg mt-14">
         <div className="p-6 border border-gray-300 sm:rounded-md">
-          <form>
+          <form onSubmit={handleSubmit}>
             <label className="block mb-6">
               <span className="bg-rose-700 text-white rounded-md px-2 py-1">必須</span>
               <span className="text-gray-700">お名前</span>
@@ -151,7 +151,6 @@ const contactForm = () => {
             <div className="mb-6">
               <button
                 type="submit"
-                onClick={handleSubmit}
                 className="
             h-10
             px-5
@@ -168,18 +167,6 @@ const contactForm = () => {
               </button>
             </div>
           </form>
-          {/* フォーム完成までの仮連絡先 */}
-          <div>
-            <p>ただいまフォーム機能作成中のため大変お手数ですがお問い合わせはTwitterよりお願いいたします。
-            </p>
-            <div className="flex justify-center mt-3 mb-5">
-              <Link href="https://twitter.com/zonoryo03">
-                <a className="mr-4">
-                  <BsTwitter size="3em" color="#0080ff" />
-                </a>
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </>
