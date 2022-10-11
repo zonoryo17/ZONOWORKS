@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Layout from '../../components/layout';
-import ContactForm from '../../components/templatates/contactForm';
+import Layout from '../components/layout';
+import ContactForm from '../components/templatates/contactForm';
 
 const Contact = () => {
   return (

@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.8",
+    "@mui/styled-engine-sc": "^5.10.6",
     "@sendgrid/mail": "^7.7.0",
     "next": "12.1.6",
     "nodemailer": "^6.7.7",
@@ -16,7 +20,8 @@
     "react-burger-menu": "^3.0.8",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

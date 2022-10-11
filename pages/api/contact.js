@@ -17,7 +17,7 @@ const sendMail = (req, res) => {
   });
 
   //管理人に送るお問い合わせメッセージ
-  const toHostMailData ={
+  const toHostMailData = {
     from: "sender@mail.com",
     to: "p.naka.0p0@gmail.com",
     subject: `【お問い合わせ】${req.body.name}様より`,
@@ -64,7 +64,7 @@ const sendMail = (req, res) => {
     if (err) console.log(err);
     else console.log(info);
   });
-  transporter.sendMail(toGuestMailData, function(err, info) {
+  transporter.sendMail(toGuestMailData, function (err, info) {
     if (err) console.log(err);
     else console.log(info);
   });

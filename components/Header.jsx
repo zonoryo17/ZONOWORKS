@@ -23,9 +23,10 @@ const Header = () => {
         </a>
       </Link>
       <div className="space-x-8 hidden md:flex">
-        <Link href="/posts/Profile"><a> Profile </a></Link>
-        <Link href="/posts/Works"><a> Works </a></Link>
-        <Link href="/posts/Contact"><a> Contact </a></Link>
+        <Link href="/Profile"><a> Profile </a></Link>
+        <Link href="/Works"><a> Works </a></Link>
+        <Link href="/Link"><a> Link </a></Link>
+        <Link href="/Contact"><a> Contact </a></Link>
       </div>
       <div className="md:hidden cursor-pointer" onClick={() => toggleMenu()}>
         <MdMenu className={openMenu ? NavigationStyles.open : undefined} size="2em" />
@@ -38,21 +39,28 @@ const Header = () => {
         <span></span>
       </div>
       <li>
-        <Link href="/posts/Profile">
+        <Link href="/Profile">
           <a>
             <p className={NavigationStyles.mainTitle}>Profile</p>
           </a>
         </Link>
       </li>
       <li>
-        <Link href="/posts/Works">
+        <Link href="/Works">
         <a>
           <p className={NavigationStyles.mainTitle}>Works</p>
         </a>
         </Link>
       </li>
       <li>
-        <Link href="/posts/Contact">
+        <Link href="/Link">
+        <a>
+          <p className={NavigationStyles.mainTitle}>Link</p>
+        </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/Contact">
         <a>
           <p className={NavigationStyles.mainTitle}>Contact</p>
         </a>

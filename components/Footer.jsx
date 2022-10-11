@@ -6,9 +6,10 @@ export default function Footer() {
     <>
       <footer className="bg-blue-800 text-white mt-5">
         <div className="flex justify-center space-x-12 pt-5">
-          <Link href="/posts/Profile"><a> Profile </a></Link>
-          <Link href="/posts/Works"><a> Works </a></Link>
-          <Link href="/posts/Contact"><a> Contact </a></Link>
+          <Link href="/Profile"><a> Profile </a></Link>
+          <Link href="/Works"><a> Works </a></Link>
+          <Link href="/Link"><a> Link </a></Link>
+          <Link href="/Contact"><a> Contact </a></Link>
         </div>
         <div className="flex justify-center pt-10">
           <Link href="https://twitter.com/zonoryo03">
