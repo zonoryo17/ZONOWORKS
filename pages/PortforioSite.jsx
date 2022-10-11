@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import { FaRegCalendarAlt, FaRegCommentDots } from "react-icons/fa";
 import { BsCodeSlash } from "react-icons/bs";
 
