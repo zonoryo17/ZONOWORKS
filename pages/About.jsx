@@ -159,7 +159,7 @@ const About = () => {
                 </tbody>
               </table>
               <div className="mt-7 mb-5">
-                <Link href="/posts/Profile">
+                <Link href="/Profile">
                   <button className="shadow-lg px-4 py-2 mt-5 bg-gradient-to-r hover:bg-gradient-to-l from-cyan-400 to-blue-700 text-lg text-white font-semibold rounded">To Profile</button>
                 </Link>
               </div>
@@ -171,24 +171,24 @@ const About = () => {
             </div>
             <div className="flex flex-wrap justify-center mb-10 mt-16 mx-5 space-x-0 sm:space-x-10">
               <div className="text-center mt-5">
-                <Link href="/posts/PortforioSite">
+                <Link href="/PortforioSite">
                   <img src="/images/zonoworksImg.jpg" alt="works01の画像" className=" max-h-60 mb-3 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
                 </Link>
-                <Link href="/posts/PortforioSite">
+                <Link href="/PortforioSite">
                   <a className="font-bold">ポートフォリオサイト</a>
                 </Link>
               </div>
               <div className="text-center mt-5">
-                <Link href="/posts/PortforioSite">
+                <Link href="/PortforioSite">
                   <img src="/images/zonoworksImg.jpg" alt="works01の画像" className=" max-h-60 mb-3 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
                 </Link>
-                <Link href="/posts/PortforioSite">
+                <Link href="/PortforioSite">
                   <a className="font-bold">ポートフォリオサイト</a>
                 </Link>
               </div>
             </div>
             <div className="flex justify-center">
-              <Link href="/posts/Works">
+              <Link href="/Works">
                 <button className="shadow-lg px-4 py-2 mt-5 bg-gradient-to-r hover:bg-gradient-to-l from-slate-400 to-gray-700 text-lg text-white font-semibold rounded">To Works</button>
               </Link>
             </div>
@@ -199,7 +199,7 @@ const About = () => {
           <p className="text-md sm:text-lg font-bold text-center mt-10 mb-16">制作物に関するご質問や各種ご相談、オファー等<br />
             お気軽にお問い合わせください。</p>
           <div>
-            <Link href="/posts/Contact">
+            <Link href="/Contact">
               <button className="shadow-lg px-4 py-2 mb-16 bg-gradient-to-r hover:bg-gradient-to-l from-blue-400 to-blue-800 text-lg text-white font-semibold rounded">To Contact</button>
             </Link>
           </div>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '../../components/layout';
-import utilStyles from '../../styles/utils.module.css';
-import layoutStyles from '../../components/layout.module.css';
+import Layout from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
+import layoutStyles from '../components/layout.module.css';
 import Link from 'next/link';
 import { FaTwitter, FaGithub } from "react-icons/fa"
 

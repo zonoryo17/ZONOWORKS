@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '../../components/layout';
-import layoutStyles from '../../components/layout.module.css';
+import Layout from '../components/layout';
+import layoutStyles from '../components/layout.module.css';
 
 
 const Works = () => {
@@ -17,11 +17,11 @@ const Works = () => {
           <h1 className={layoutStyles.h1Text}>Works</h1>
           <div className="flex flex-wrap flex-col items-center mb-20 mt-20 md:mt-20 text-center space-x-5">
             <div className="mx-5">
-              <Link href="/posts/PortforioSite">
+              <Link href="/PortforioSite">
                 <img src="/images/zonoworksImg.jpg" alt="works01の画像" className="max-h-60 mb-3 shadow-lg transition-all duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none  hover:duration-300" />
               </Link>
             </div>
-            <Link href="/posts/PortforioSite">
+            <Link href="/PortforioSite">
               <a className="font-bold mb-5 md:mb-10 mt-5 md:mt-10">ポートフォリオサイト</a>
             </Link>
             <p className="mt-5 md:mt-0 mb-5 pr-5">私のスキルや経歴をまとめたポートフォリオサイトです。</p>

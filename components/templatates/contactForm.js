@@ -1,5 +1,6 @@
 import layoutStyles from '../../components/layout.module.css';
 import { useState } from "react";
+import Alert from '@mui/material/Alert';
 
 const contactForm = () => {
   const [name, setName] = useState("");
@@ -34,6 +35,7 @@ const contactForm = () => {
         setEmail("");
         setPhoneNumber("");
         setMessage("");
+        alert("お問い合わせの送信が完了しました");
       } else {
         console.log("送信に失敗しました");
       }
