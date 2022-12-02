@@ -1,30 +1,32 @@
-import Layout from "../components/layout"
-import Link from '@mui/material/Link';
-import { Box, CardContent, Stack, Typography } from "@mui/material";
-import layoutStyles from '../components/layout.module.css';
-import { createTheme } from "@mui/material/styles";
-
+import Layout from '../components/layout'
+import Link from '@mui/material/Link'
+import { Box, CardContent, Stack, Typography } from '@mui/material'
+import layoutStyles from '../components/layout.module.css'
 
 const LinkPage = () => {
-  let theme = createTheme({
-    breakpoints: {
-      values: {
-        xs: 0,
-        sm: 600,
-        md: 768,
-        lg: 1025,
-        xl: 1536,
-      },
-    }
-  })
   return (
     <Layout>
       <div>
         <h1 className={layoutStyles.h1Text}>Link</h1>
       </div>
-      <Box sx={{ display: 'flex', direction: 'column', justifyContent: 'center', marginBottom: 10 }}>
+      <Box
+        sx={{
+          display: 'flex',
+          direction: 'column',
+          justifyContent: 'center',
+          marginBottom: 10
+        }}
+      >
         <Stack spacing={3}>
-          <Link href="https://zenn.dev/zonoryo03" sx={{ display: 'flex', boxShadow: "5px 5px 5px #c0c0c0", borderRadius: "8px", textDecoration: 'none' }}>
+          <Link
+            href="https://zenn.dev/zonoryo03"
+            sx={{
+              display: 'flex',
+              boxShadow: '5px 5px 5px #c0c0c0',
+              borderRadius: '8px',
+              textDecoration: 'none'
+            }}
+          >
             <CardContent>
               <Typography variant="h5" component="div">
                 Zenn
@@ -34,7 +36,15 @@ const LinkPage = () => {
               </Typography>
             </CardContent>
           </Link>
-          <Link href="https://zonoryo17.notion.site/f847889044e64be5b699382f2b00774f" sx={{ display: 'flex', boxShadow: "5px 5px 5px #c0c0c0", borderRadius: "8px", textDecoration: 'none' }}>
+          <Link
+            href="https://zonoryo17.notion.site/f847889044e64be5b699382f2b00774f"
+            sx={{
+              display: 'flex',
+              boxShadow: '5px 5px 5px #c0c0c0',
+              borderRadius: '8px',
+              textDecoration: 'none'
+            }}
+          >
             <CardContent>
               <Typography variant="h5" component="div">
                 Notion
@@ -44,7 +54,15 @@ const LinkPage = () => {
               </Typography>
             </CardContent>
           </Link>
-          <Link href="https://twitter.com/zonoryo03" sx={{ display: 'flex', boxShadow: "5px 5px 5px #c0c0c0", borderRadius: "8px", textDecoration: 'none' }}>
+          <Link
+            href="https://twitter.com/zonoryo03"
+            sx={{
+              display: 'flex',
+              boxShadow: '5px 5px 5px #c0c0c0',
+              borderRadius: '8px',
+              textDecoration: 'none'
+            }}
+          >
             <CardContent>
               <Typography variant="h5" component="div">
                 Twitter
@@ -54,7 +72,15 @@ const LinkPage = () => {
               </Typography>
             </CardContent>
           </Link>
-          <Link href="https://github.com/zonoryo17" sx={{ display: 'flex', boxShadow: "5px 5px 5px #c0c0c0", borderRadius: "8px", textDecoration: 'none' }}>
+          <Link
+            href="https://github.com/zonoryo17"
+            sx={{
+              display: 'flex',
+              boxShadow: '5px 5px 5px #c0c0c0',
+              borderRadius: '8px',
+              textDecoration: 'none'
+            }}
+          >
             <CardContent>
               <Typography variant="h5" component="div">
                 GitHub
@@ -66,8 +92,8 @@ const LinkPage = () => {
           </Link>
         </Stack>
       </Box>
-    </Layout >
+    </Layout>
   )
 }
 
-export default LinkPage;
+export default LinkPage
