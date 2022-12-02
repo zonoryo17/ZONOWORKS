@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Layout from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import layoutStyles from '../components/layout.module.css';
-import Link from 'next/link';
-import { FaTwitter, FaGithub } from "react-icons/fa"
+import Head from 'next/head'
+import Image from 'next/image'
+import Layout from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
+import layoutStyles from '../components/layout.module.css'
+import Link from 'next/link'
+import { FaTwitter, FaGithub } from 'react-icons/fa'
 
-const name = '中薗　良太';
+const name = '中薗　良太'
 
 export default function Profile() {
   return (
@@ -61,33 +61,38 @@ export default function Profile() {
                 </tr>
                 <tr className="border-b-2">
                   <td>仕事</td>
-                  <td>理学療法士（主任）
-                  </td>
+                  <td>理学療法士（主任）</td>
                 </tr>
                 <tr className="border-b-2">
                   <td>資格</td>
-                  <td>理学療法士、3学会合同呼吸療法認定士、ユニバーサルマナー検定2級、地域ケア会議推進リーダー、介護予防推進リーダー
+                  <td>
+                    理学療法士、3学会合同呼吸療法認定士、ユニバーサルマナー検定2級、地域ケア会議推進リーダー、介護予防推進リーダー
                   </td>
                 </tr>
                 <tr className="border-b-2">
                   <td>習得スキル・言語</td>
-                  <td>HTML, CSS, JavaScript, React, Next.js, Git/GitHub, TailwindCSS, MUI</td>
+                  <td>
+                    HTML, CSS, JavaScript, React, Next.js, Git/GitHub, Supabase,
+                    Chakra UI, Tailwind CSS, MUI
+                  </td>
                 </tr>
                 <tr className="border-b-2">
                   <td>学習中スキル・言語</td>
-                  <td>TypeScript, PHP/Larabel, MySQL, Node.js, Docker</td>
+                  <td>TypeScript, Node.js, Express Docker</td>
                 </tr>
                 <tr className="border-b-2">
                   <td>その他の使用ツール</td>
-                  <td>Slack, Torello, Notion</td>
+                  <td>Slack, Notion</td>
                 </tr>
                 <tr className="border-b-2">
                   <td>学習期間</td>
-                  <td>2022.2.20~ 現在</td>
+                  <td>2022年2月~ 現在</td>
                 </tr>
                 <tr className="border-b-2">
                   <td>趣味</td>
-                  <td>音楽鑑賞（ライブ、フェス）、バスケ、マラソン、ロードバイク、アウトドア、マンガ</td>
+                  <td>
+                    音楽鑑賞（ライブ、フェス）、バスケ、マラソン、ロードバイク、アウトドア、マンガ
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -95,20 +100,27 @@ export default function Profile() {
         </div>
         <div className="mx-auto lg:text-center mt-24 py-20 bg-slate-100">
           <div className="mx-10 sm:mx-20">
-            <p className="text-sm md:text-base">当サイトにアクセスしていただきありがとうございます。ぞのりょーと申します。<br />
+            <p className="text-sm md:text-base">
+              当サイトにアクセスしていただきありがとうございます。ぞのりょーと申します。
+              <br />
               普段は理学療法士として勤務しており、現在はエンジニアとしての転職を目指してプログラミングを学習中です。
             </p>
             <div className="flex flex-col items-center">
-              <h3 className="bg-slate-800 text-gray-100 text-xl px-14 py-4 mt-8 mb-4 rounded-2xl text-shadow">Why Engineer ?</h3>
+              <h3 className="bg-slate-800 text-gray-100 text-xl px-14 py-4 mt-8 mb-4 rounded-2xl text-shadow">
+                Why Engineer ?
+              </h3>
               <div>
-                <ol className="list-decimal font-bold text-left ml-5 md:ml-24 text-sm sm:text-base" >
+                <ol className="list-decimal font-bold text-left ml-5 md:ml-24 text-sm sm:text-base">
                   <li>より多くの人に影響を与えたかったから</li>
-                  <li>臨床や大学院で得た知識や経験から作ってみたいサービスができたから</li>
+                  <li>臨床での経験から作ってみたいサービスができたから</li>
                   <li>プログラミング学習が楽しいから</li>
                 </ol>
               </div>
-              <p className="text-sm sm:text-base mt-10">プログラミング学習は難しく、悩むこともありますが楽しみながら学習を続けられています！<br />
-                社会での様々な課題を解決し、多くの方により良いサービスが提供できるようなエンジニアを目指します。</p>
+              <p className="text-sm sm:text-base mt-10">
+                プログラミング学習は難しく、悩むこともありますが楽しみながら学習を続けられています！
+                <br />
+                社会での様々な課題を解決し、多くの方により良いサービスが提供できるようなエンジニアを目指します。
+              </p>
             </div>
           </div>
         </div>
@@ -122,21 +134,29 @@ export default function Profile() {
               </div>
             </li>
             <li>
-              <div className="text-zinc-400 font-bold">2020年4月－2022年3月</div>
+              <div className="text-zinc-400 font-bold">
+                2020年4月－2022年3月
+              </div>
               <div className="font-bold">
                 <p>大学院修士課程　修了（医療リハビリテーション学）</p>
               </div>
             </li>
             <li>
-              <div className="text-zinc-400 font-bold">2019年4月－2020年3月</div>
+              <div className="text-zinc-400 font-bold">
+                2019年4月－2020年3月
+              </div>
               <div className="font-bold">
                 <p>大学　研究員</p>
               </div>
             </li>
             <li>
-              <div className="text-zinc-400 font-bold">2018年11月－2020年6月</div>
+              <div className="text-zinc-400 font-bold">
+                2018年11月－2020年6月
+              </div>
               <div className="font-bold">
-                <p>ヘルスケア系スタートアップ企業　腰痛・肩こりのチャットサポート　業務委託</p>
+                <p>
+                  ヘルスケア系スタートアップ企業　腰痛・肩こりのチャットサポート　業務委託
+                </p>
               </div>
             </li>
             <li>
@@ -146,7 +166,9 @@ export default function Profile() {
               </div>
             </li>
             <li>
-              <div className="text-zinc-400 font-bold">2016年4月－2018年3月</div>
+              <div className="text-zinc-400 font-bold">
+                2016年4月－2018年3月
+              </div>
               <div className="font-bold">
                 <p>通信制大学</p>
               </div>
@@ -167,5 +189,5 @@ export default function Profile() {
         </div>
       </Layout>
     </>
-  );
+  )
 }

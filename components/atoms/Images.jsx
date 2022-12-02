@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 const Images = (props) => (
   <Image
@@ -7,6 +7,6 @@ const Images = (props) => (
     width={props.width} // Desired size with correct aspect ratio
     alt="Top Logo"
   />
-);
+)
 
-export default Images;
+export default Images

@@ -1,11 +1,11 @@
-import NavigationStyles from "../styles/navigation.module.scss";
-import Link from "next/link";
-import React, {useState} from "react"
+import NavigationStyles from '../styles/navigation.module.scss'
+import Link from 'next/link'
+import React, { useState } from 'react'
 
 const NavigationBar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false)
   const menuFunction = () => {
-    setOpenMenu(!openMenu);
+    setOpenMenu(!openMenu)
   }
   return (
     <React.Fragment>
@@ -19,27 +19,27 @@ const NavigationBar = () => {
           <ul>
             <li>
               <Link href="/">
-              <a>メニュー</a>
+                <a>メニュー</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-              <a>メニュー</a>
+                <a>メニュー</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-              <a>メニュー</a>
+                <a>メニュー</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-              <a>メニュー</a>
+                <a>メニュー</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-              <a>メニュー</a>
+                <a>メニュー</a>
               </Link>
             </li>
             <li>
@@ -50,16 +50,30 @@ const NavigationBar = () => {
           </ul>
         </nav>
         <div className={NavigationStyles.container}>
-          <div className={NavigationStyles.humburger} onClick={() => menuFunction()}>
-            <span className={openMenu ? NavigationStyles.open : undefined}></span>
-            <span className={openMenu ? NavigationStyles.open : undefined}></span>
+          <div
+            className={NavigationStyles.humburger}
+            onClick={() => menuFunction()}
+          >
+            <span
+              className={openMenu ? NavigationStyles.open : undefined}
+            ></span>
+            <span
+              className={openMenu ? NavigationStyles.open : undefined}
+            ></span>
             <p className={openMenu ? NavigationStyles.open : undefined}>Menu</p>
           </div>
         </div>
       </header>
-      <div className={`${NavigationStyles.drawerMenu} ${openMenu ? NavigationStyles.open : undefined}`}>
+      <div
+        className={`${NavigationStyles.drawerMenu} ${
+          openMenu ? NavigationStyles.open : undefined
+        }`}
+      >
         <ul>
-          <div className={NavigationStyles.close} onClick={() => menuFunction()}>
+          <div
+            className={NavigationStyles.close}
+            onClick={() => menuFunction()}
+          >
             <span></span>
             <span></span>
             <p>Close</p>
@@ -73,22 +87,22 @@ const NavigationBar = () => {
           </li>
           <li>
             <Link href="/posts/Works">
-            <a>
-              <p className={NavigationStyles.mainTitle}>Works</p>
-            </a>
+              <a>
+                <p className={NavigationStyles.mainTitle}>Works</p>
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/posts/Contact">
-            <a>
-              <p className={NavigationStyles.mainTitle}>Contact</p>
-            </a>
+              <a>
+                <p className={NavigationStyles.mainTitle}>Contact</p>
+              </a>
             </Link>
           </li>
         </ul>
       </div>
     </React.Fragment>
-  );
+  )
 }
 
-export default NavigationBar;
+export default NavigationBar
